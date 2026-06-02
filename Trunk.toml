@@ -1,0 +1,12 @@
+[watch]
+ignore = ["dist"]
+paths = ["src", "themes"]
+
+[serve]
+port = 9081
+
+[build]
+dist = "dist"
+# Release build: strips Dioxus devtools WebSocket (debug_assertions = false)
+release = true
+target = "index.html"

@@ -1,0 +1,85 @@
+/* AUTO-GENERATED — do not edit.
+ * Source of truth: crates/rs-grid-scene/src/theme.rs
+ * Regenerate: cargo run -p rs-grid-scene --bin generate-theme
+ */
+
+:root {
+  --rs-grid-bg: #ffffff;
+  --rs-grid-header-bg: #f8f9fb;
+  --rs-grid-header-text: #181d1f;
+  --rs-grid-cell-text: #181d1f;
+  --rs-grid-grid-line: #e2e8f0;
+  --rs-grid-header-border: #babfc7;
+  --rs-grid-header-separator-inset: 15px;
+  --rs-grid-header-separator-width: 2px;
+  --rs-grid-selection-fill: rgba(33, 150, 243, 0.20);
+  --rs-grid-selection-border: rgba(33, 150, 243, 0.85);
+  --rs-grid-header-selection-fill: rgba(33, 150, 243, 0.08);
+  --rs-grid-gutter-selection-fill: rgba(33, 150, 243, 0.08);
+  --rs-grid-scrollbar-track: #f1f2f4;
+  --rs-grid-scrollbar-thumb: rgba(0, 0, 0, 0.28);
+  --rs-grid-row-alt-bg: #ffffff;
+  --rs-grid-row-hover-bg: rgba(33, 150, 243, 0.07);
+  --rs-grid-header-height: 48px;
+  --rs-grid-row-height: 42px;
+  --rs-grid-font-size: 14px;
+  --rs-grid-header-font-size: 14px;
+  --rs-grid-header-font-bold: 1;
+  --rs-grid-header-font-italic: 0;
+  --rs-grid-flash-fill: #ffdc00;
+  --rs-grid-flash-border: #ffdc00;
+  --rs-grid-search-highlight: rgba(255, 213, 0, 0.30);
+  --rs-grid-search-current: rgba(255, 165, 0, 0.55);
+  --rs-grid-skeleton-fg: rgba(200, 200, 200, 0.30);
+  --rs-grid-cell-padding: 12px;
+  --rs-grid-scrollbar-width: 14px;
+  --rs-grid-scrollbar-radius: 6px;
+  --rs-grid-scrollbar-inset: 3px;
+  --rs-grid-drag-overlay: rgba(0, 0, 0, 0.03);
+  --rs-grid-drag-ghost-bg: #f8f9fb;
+  --rs-grid-drag-ghost-text: #181d1f;
+  --rs-grid-drag-insert-line-width: 1px;
+  --rs-grid-drag-ghost-radius: 4px;
+  --rs-grid-drag-ghost-border-width: 1px;
+  --rs-grid-drag-anim-alpha: 0.50;
+  --rs-grid-sort-arrow-width: 4px;
+  --rs-grid-sort-arrow-height: 3.5px;
+  --rs-grid-header-menu-icon: rgba(24, 29, 31, 0.71);
+  --rs-grid-header-menu-icon-hover-bg: rgba(0, 0, 0, 0.06);
+  --rs-grid-header-menu-icon-radius: 3px;
+  --rs-grid-header-menu-icon-margin-r: 10px;
+  --rs-grid-header-menu-icon-btn-w: 22px;
+  --rs-grid-header-menu-icon-btn-h: 22px;
+  --rs-grid-header-menu-icon-dot-r: 1.2px;
+  --rs-grid-pinned-bg: #ffffff;
+  --rs-grid-pinned-header-bg: #f8f9fb;
+  --rs-grid-pinned-separator-color: #babfc7;
+  --rs-grid-pinned-separator-width: 1px;
+  --rs-grid-gutter-bg: #f8f9fb;
+  --rs-grid-gutter-text: rgba(24, 29, 31, 0.71);
+  --rs-grid-gutter-font-size: 14px;
+  --rs-grid-gutter-font-bold: 1;
+  --rs-grid-gutter-font-italic: 0;
+  --rs-grid-gutter-border: #babfc7;
+  --rs-grid-cell-btn-primary-bg: #2196f3;
+  --rs-grid-cell-btn-primary-text: #ffffff;
+  --rs-grid-cell-btn-secondary-bg: #e2e8f0;
+  --rs-grid-cell-btn-secondary-text: #181d1f;
+  --rs-grid-cell-btn-danger-bg: #ef4444;
+  --rs-grid-cell-btn-danger-text: #ffffff;
+  --rs-grid-cell-btn-ghost-color: rgba(33, 150, 243, 0.78);
+  --rs-grid-cell-btn-radius: 4px;
+  --rs-grid-cell-btn-padding-y: 4px;
+  --rs-grid-cell-btn-padding-x: 8px;
+  --rs-grid-cell-btn-gap: 4px;
+  --rs-grid-cell-btn-margin-r: 8px;
+
+  /* context menu */
+  --rs-grid-ctx-bg: #ffffff;
+  --rs-grid-ctx-border: #dde2eb;
+  --rs-grid-ctx-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --rs-grid-ctx-text: #181d1f;
+  --rs-grid-ctx-text-disabled: #9ca3af;
+  --rs-grid-ctx-hover-bg: #f8f9fb;
+  --rs-grid-ctx-separator: #e2e8f0;
+}

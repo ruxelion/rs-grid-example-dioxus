@@ -1,0 +1,46 @@
+/* AUTO-GENERATED — do not edit.
+ * Source of truth: crates/rs-grid-scene/src/theme.rs
+ * Regenerate: cargo run -p rs-grid-scene --bin generate-theme
+ */
+
+:root.dimmed {
+  --rs-grid-bg: #22272e;
+  --rs-grid-header-bg: #2d333b;
+  --rs-grid-header-text: #adbac7;
+  --rs-grid-cell-text: #adbac7;
+  --rs-grid-grid-line: #373e47;
+  --rs-grid-header-border: #444c56;
+  --rs-grid-selection-fill: rgba(56, 139, 253, 0.20);
+  --rs-grid-selection-border: rgba(56, 139, 253, 0.85);
+  --rs-grid-header-selection-fill: rgba(56, 139, 253, 0.12);
+  --rs-grid-gutter-selection-fill: rgba(56, 139, 253, 0.12);
+  --rs-grid-scrollbar-track: #1c2128;
+  --rs-grid-scrollbar-thumb: rgba(176, 188, 200, 0.30);
+  --rs-grid-row-alt-bg: #22272e;
+  --rs-grid-row-hover-bg: rgba(255, 255, 255, 0.04);
+  --rs-grid-skeleton-fg: rgba(99, 110, 123, 0.78);
+  --rs-grid-drag-ghost-bg: #2d333b;
+  --rs-grid-drag-ghost-text: #adbac7;
+  --rs-grid-header-menu-icon: rgba(173, 186, 199, 0.70);
+  --rs-grid-header-menu-icon-hover-bg: rgba(255, 255, 255, 0.06);
+  --rs-grid-pinned-bg: #22272e;
+  --rs-grid-pinned-header-bg: #2d333b;
+  --rs-grid-pinned-separator-color: #444c56;
+  --rs-grid-gutter-bg: #2d333b;
+  --rs-grid-gutter-text: rgba(173, 186, 199, 0.70);
+  --rs-grid-gutter-border: #444c56;
+  --rs-grid-cell-btn-primary-bg: #388bfd;
+  --rs-grid-cell-btn-secondary-bg: #373e47;
+  --rs-grid-cell-btn-secondary-text: #adbac7;
+  --rs-grid-cell-btn-danger-bg: #da3633;
+  --rs-grid-cell-btn-ghost-color: rgba(56, 139, 253, 0.78);
+
+  /* context menu */
+  --rs-grid-ctx-bg: #2d333b;
+  --rs-grid-ctx-border: #444c56;
+  --rs-grid-ctx-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --rs-grid-ctx-text: #adbac7;
+  --rs-grid-ctx-text-disabled: #636e7b;
+  --rs-grid-ctx-hover-bg: #373e47;
+  --rs-grid-ctx-separator: #373e47;
+}

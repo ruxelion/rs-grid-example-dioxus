@@ -1,0 +1,68 @@
+[package]
+name = "basic-dioxus"
+version = "0.1.0"
+edition = "2021"
+
+# Standalone rs-grid example — Dioxus 0.7 CSR + Trunk.
+# Depends on the rs-grid library via git tag (see README for build steps).
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+rs-grid-core   = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
+rs-grid-dioxus = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
+rs-grid-web    = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
+example-common = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
+dioxus = { version = "0.7", features = ["web"] }
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+console_error_panic_hook = "0.1"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "CanvasRenderingContext2d",
+  "HtmlCanvasElement",
+  "Window",
+  "Document",
+  "HtmlDocument",
+  "Element",
+  "EventTarget",
+  "MouseEvent",
+  "MouseEventInit",
+  "WheelEvent",
+  "DomRect",
+  "ResizeObserver",
+  "ResizeObserverEntry",
+  "ResizeObserverSize",
+  "Performance",
+  "Request",
+  "RequestInit",
+  "RequestMode",
+  "Response",
+  "KeyboardEvent",
+  "Navigator",
+  "Clipboard",
+  "HtmlTextAreaElement",
+  "HtmlBodyElement",
+  "console",
+  "ClipboardEvent",
+  "DataTransfer",
+  "CssStyleDeclaration",
+  "HtmlElement",
+  "HtmlImageElement",
+  "AddEventListenerOptions",
+  "Node",
+  "HtmlAnchorElement",
+  "HtmlInputElement",
+  "HtmlSelectElement",
+  "HtmlOptionElement",
+  "UiEvent",
+  "FocusEvent",
+  "FileList",
+  "File",
+  "FileReader",
+  "Storage",
+  "TextMetrics",
+]
