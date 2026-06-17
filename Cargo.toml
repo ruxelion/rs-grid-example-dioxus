@@ -10,10 +10,10 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-rs-grid-core   = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
-rs-grid-dioxus = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
-rs-grid-web    = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
-example-common = { git = "https://github.com/ruxelion/rs-grid", tag = "v0.1.0" }
+rs-grid-core   = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.2" }
+rs-grid-dioxus = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.2" }
+rs-grid-web    = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.2" }
+example-common = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.2" }
 dioxus = { version = "0.7", features = ["web"] }
 wasm-bindgen = "0.2"
 js-sys = "0.3"

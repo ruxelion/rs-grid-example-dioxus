@@ -31,6 +31,10 @@
   --rs-grid-search-highlight: rgba(255, 213, 0, 0.30);
   --rs-grid-search-current: rgba(255, 165, 0, 0.55);
   --rs-grid-skeleton-fg: rgba(200, 200, 200, 0.30);
+  --rs-grid-progress-track: #e2e8f0;
+  --rs-grid-progress-fill: #422ad5;
+  --rs-grid-progress-height: 8px;
+  --rs-grid-progress-radius: 8px;
   --rs-grid-cell-padding: 12px;
   --rs-grid-scrollbar-width: 14px;
   --rs-grid-scrollbar-radius: 6px;

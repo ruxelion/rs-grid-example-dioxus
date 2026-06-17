@@ -3,7 +3,9 @@
 use std::{cell::RefCell, rc::Rc};
 
 use dioxus::prelude::*;
-use example_common::{build_model, fmt_cols, fmt_rows};
+use example_common::{
+    build_model, class_map::resolve_classes, fmt_cols, fmt_rows,
+};
 use rs_grid_core::state::GridState;
 use rs_grid_dioxus::{theme_from_css_vars, Locale, WebGridCanvas};
 use wasm_bindgen::{prelude::*, JsCast};
@@ -35,6 +37,7 @@ fn remount(canvas_ref: &CanvasRef, grid_ref: &GridRef, rows: u64, cols: usize) {
         theme_from_css_vars(),
         Locale::default(),
     );
+    gc.set_class_resolver(Rc::new(resolve_classes));
     gc.render();
     *grid_ref.borrow_mut() = Some(gc);
 }

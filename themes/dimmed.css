@@ -19,6 +19,8 @@
   --rs-grid-row-alt-bg: #22272e;
   --rs-grid-row-hover-bg: rgba(255, 255, 255, 0.04);
   --rs-grid-skeleton-fg: rgba(99, 110, 123, 0.78);
+  --rs-grid-progress-track: #373e47;
+  --rs-grid-progress-fill: #6350f0;
   --rs-grid-drag-ghost-bg: #2d333b;
   --rs-grid-drag-ghost-text: #adbac7;
   --rs-grid-header-menu-icon: rgba(173, 186, 199, 0.70);
