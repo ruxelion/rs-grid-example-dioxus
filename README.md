@@ -4,7 +4,7 @@ Standalone example of [rs-grid](https://github.com/ruxelion/rs-grid) with
 **Dioxus 0.7 (CSR)** and [Trunk](https://trunkrs.dev). Row/column-count and
 theme selectors over a virtual dataset.
 
-This example pins the library at a released tag (`v0.1.0`) via a git
+This example pins the library at a released tag (`rs-grid-core-v0.1.3`) via a git
 dependency — see [`Cargo.toml`](Cargo.toml).
 
 ## Prerequisites

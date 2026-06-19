@@ -1029,7 +1029,7 @@ dependencies = [
 [[package]]
 name = "example-common"
 version = "0.1.0"
-source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.2#badd446b9cd83d1dda21c304b03ede867fb5eb7e"
+source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.3#f24ea6790109e50a11d0f9a87f92e8b21038038b"
 dependencies = [
  "rs-grid-core",
  "rs-grid-icons",
@@ -2226,13 +2226,13 @@ dependencies = [
 
 [[package]]
 name = "rs-grid-core"
-version = "0.1.2"
-source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.2#badd446b9cd83d1dda21c304b03ede867fb5eb7e"
+version = "0.1.3"
+source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.3#f24ea6790109e50a11d0f9a87f92e8b21038038b"
 
 [[package]]
 name = "rs-grid-dioxus"
-version = "0.1.2"
-source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.2#badd446b9cd83d1dda21c304b03ede867fb5eb7e"
+version = "0.1.3"
+source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.3#f24ea6790109e50a11d0f9a87f92e8b21038038b"
 dependencies = [
  "dioxus",
  "rs-grid-core",
@@ -2245,12 +2245,12 @@ dependencies = [
 [[package]]
 name = "rs-grid-icons"
 version = "0.1.2"
-source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.2#badd446b9cd83d1dda21c304b03ede867fb5eb7e"
+source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.3#f24ea6790109e50a11d0f9a87f92e8b21038038b"
 
 [[package]]
 name = "rs-grid-render-canvas"
-version = "0.1.2"
-source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.2#badd446b9cd83d1dda21c304b03ede867fb5eb7e"
+version = "0.1.3"
+source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.3#f24ea6790109e50a11d0f9a87f92e8b21038038b"
 dependencies = [
  "js-sys",
  "rs-grid-scene",
@@ -2260,16 +2260,16 @@ dependencies = [
 
 [[package]]
 name = "rs-grid-scene"
-version = "0.1.2"
-source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.2#badd446b9cd83d1dda21c304b03ede867fb5eb7e"
+version = "0.1.3"
+source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.3#f24ea6790109e50a11d0f9a87f92e8b21038038b"
 dependencies = [
  "rs-grid-core",
 ]
 
 [[package]]
 name = "rs-grid-web"
-version = "0.1.2"
-source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.2#badd446b9cd83d1dda21c304b03ede867fb5eb7e"
+version = "0.1.3"
+source = "git+https://github.com/ruxelion/rs-grid?tag=rs-grid-core-v0.1.3#f24ea6790109e50a11d0f9a87f92e8b21038038b"
 dependencies = [
  "console_error_panic_hook",
  "js-sys",
