@@ -66,3 +66,12 @@ features = [
   "Storage",
   "TextMetrics",
 ]
+
+# TEMPORARY (Phase B dev): build against the local rs-grid working tree so the
+# demo can use unreleased API (example_common::layout, rs_grid_web::storage).
+# Remove this block and bump the git `tag` once the new rs-grid version ships.
+[patch."https://github.com/ruxelion/rs-grid"]
+rs-grid-core   = { path = "../rs-grid/crates/rs-grid-core" }
+rs-grid-web    = { path = "../rs-grid/crates/rs-grid-web" }
+rs-grid-dioxus = { path = "../rs-grid/crates/rs-grid-dioxus" }
+example-common = { path = "../rs-grid/examples/example-common" }
