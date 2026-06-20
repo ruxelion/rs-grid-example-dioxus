@@ -10,10 +10,10 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-rs-grid-core   = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.3" }
-rs-grid-dioxus = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.3" }
-rs-grid-web    = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.3" }
-example-common = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-core-v0.1.3" }
+rs-grid-core   = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-dioxus-v0.1.4" }
+rs-grid-dioxus = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-dioxus-v0.1.4" }
+rs-grid-web    = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-dioxus-v0.1.4" }
+example-common = { git = "https://github.com/ruxelion/rs-grid", tag = "rs-grid-dioxus-v0.1.4" }
 dioxus = { version = "0.7", features = ["web"] }
 wasm-bindgen = "0.2"
 js-sys = "0.3"
@@ -66,12 +66,3 @@ features = [
   "Storage",
   "TextMetrics",
 ]
-
-# TEMPORARY (Phase B dev): build against the local rs-grid working tree so the
-# demo can use unreleased API (example_common::layout, rs_grid_web::storage).
-# Remove this block and bump the git `tag` once the new rs-grid version ships.
-[patch."https://github.com/ruxelion/rs-grid"]
-rs-grid-core   = { path = "../rs-grid/crates/rs-grid-core" }
-rs-grid-web    = { path = "../rs-grid/crates/rs-grid-web" }
-rs-grid-dioxus = { path = "../rs-grid/crates/rs-grid-dioxus" }
-example-common = { path = "../rs-grid/examples/example-common" }
