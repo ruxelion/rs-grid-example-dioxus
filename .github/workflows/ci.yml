@@ -35,3 +35,53 @@ jobs:
 
       - name: trunk build
         run: trunk build
+
+  e2e:
+    name: E2E Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - uses: Swatinem/rust-cache@v2
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: e2e/package.json
+
+      - name: Install trunk
+        run: cargo install trunk --locked
+
+      - name: trunk build
+        run: trunk build
+
+      - name: Install e2e dependencies
+        working-directory: e2e
+        run: npm install
+
+      - name: Install Playwright browsers
+        working-directory: e2e
+        run: npx playwright install chromium --with-deps
+
+      # --update-snapshots neutralizes pixel-diff flakiness (screenshots
+      # always write fresh instead of comparing against Windows-generated
+      # baselines); --grep-invert drops the "visual regression" describe
+      # block's own assertions since a self-written baseline can't be
+      # compared against itself. Non-visual functional tests still run for
+      # real and fail on a genuine bug.
+      - name: Run E2E tests (smoke + functional)
+        working-directory: e2e
+        run: npx playwright test --update-snapshots --grep-invert "visual regression"
+
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report
+          path: e2e/playwright-report/
+          retention-days: 7

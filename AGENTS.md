@@ -27,6 +27,12 @@ cd e2e && npm test                 # run
 cd e2e && npm run update-snapshots # regenerate visual baselines
 ```
 
+CI (`.github/workflows/ci.yml`, `e2e` job) runs the full suite automatically
+on every push/PR with `--update-snapshots --grep-invert "visual regression"` —
+screenshots always write fresh rather than diff against a baseline (pixel
+comparison across CI/dev environments is unreliable), so only the functional
+assertions actually gate the build.
+
 ## Critical: this repo does NOT contain the library
 
 <!-- keep in sync with rs-grid/AGENTS.md "How they relate" + the other 3
