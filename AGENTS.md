@@ -14,6 +14,16 @@ trunk serve            # dev → http://localhost:9081 (hot-reload)
 trunk build --release  # → dist/
 ```
 
+## Before coding
+
+<!-- keep in sync with the "Before coding" section in every other repo's AGENTS.md -->
+**Plan before coding non-trivial changes.** For a bug fix or feature that
+touches more than one file, changes a public API/component contract, or
+isn't an obvious one-liner, propose a short plan (approach, files touched,
+trade-offs) before writing code — use Claude Code's Plan Mode rather than
+diving straight into edits. Skip this for trivial fixes; planning every
+one-line change only adds friction.
+
 ## End-to-end tests (Playwright)
 
 A functional + visual-regression suite ([`e2e/`](e2e/)) mirrors the Leptos demo and
